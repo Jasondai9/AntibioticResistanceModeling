@@ -212,7 +212,7 @@ def mechanistic_markov():
         ax[0].set_ylabel('Optical density')
         
 
-        ax[1].plot(antibody_list, label=f'antibody μg/ml')
+        ax[1].plot(antibody_list, label=f'antibiotic μg/ml')
         ax[1].plot(nut_proportion, label=f'nutrient proportion')
         ax[1].legend()
         ax[1].set_ylabel('Concentration')
@@ -288,7 +288,7 @@ def new_markov():
     beta = 10e-6
     init_res_prop = 0.1
     init_rod_OD = 0.17
-    dosages = [2] #[0, 0.1, 0.2, 0.3, 0.4]
+    dosages = [2, 3, 4, 10] #[0, 0.1, 0.2, 0.3, 0.4]
     param_num = 1 # 0 or 1, all dead or recover
     
 
@@ -342,7 +342,7 @@ def new_markov():
         ax[1].legend()
         ax[1].set_ylabel('Count')
 
-        ax[2].plot(antibody_list, label=f'antibody μg/ml')
+        ax[2].plot(antibody_list, label=f'antibiotic μg/ml')
         ax[2].plot(nut_proportion, label=f'nutrient proportion')
         ax[2].legend()
         ax[2].set_ylabel('Concentration')
